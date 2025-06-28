@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Factorial from "./screens/Factorial";
+import PrimeNumber from "./screens/PrimeNumber";
+import Pallendrome from "./screens/Pallendrome";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/factorial" element={<Factorial/>} />
+          <Route path="/primenumber" element={<PrimeNumber/>} />
+          <Route path="/pallendrome" element={<Pallendrome/>} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
