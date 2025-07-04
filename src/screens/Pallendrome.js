@@ -39,7 +39,7 @@ const Pallendrome = () => {
         <Button size="medium" variant="contained" onClick={handleClick}>
           Check
         </Button>
-        {/* CHECK THE pallendrome */}
+        {/* CHECK THE PAllENDROME */}
         {message && <p>{message}</p>}
       </Box>
     </>
