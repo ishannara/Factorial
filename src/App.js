@@ -15,6 +15,12 @@ import TemperatureConvertor from "./components/TemperatureConvertor";
 import LiveClock from "./components/LiveClock";
 import SearchFilter from "./components/SearchFilter";
 import QuoteGentor from "./components/QuoteGentor";
+import CURD from "./screen1/CURD";
+import SideBar from "./newComponant/SideBar";
+import { Filter } from "./Filter";
+import ModalDemo from "./Modal";
+import { Chart1 } from "./Chart";
+import AgainTable from "./AgainTable";
 
 function App() {
   return (
@@ -39,6 +45,12 @@ function App() {
           <Route path="/liveclock" element={<LiveClock />} />
           <Route path="/searchfilter" element={<SearchFilter />} />
           <Route path="/quateGantor" element={<QuoteGentor />} />
+          <Route path="/curd" element={<CURD />} />
+          <Route path="/side" element={<SideBar />} />
+          <Route path="/filter" element={<Filter />} />
+          <Route path="/modal" element={<ModalDemo />} />
+          <Route path="/chart" element={<Chart1 />} />
+          <Route path="/" element={<AgainTable />} />
         </Routes>
       </BrowserRouter>
     </>

@@ -1,8 +1,13 @@
-// import { configureStore } from "@reduxjs/toolkit";
-// import todoReducer from "./reducers/TodoSlice";
+import { configureStore } from "@reduxjs/toolkit";
+// import crudReducer from "./reducers/CrudSilce";
+// import againReducer from "./reducers/AgainCrudSlice";
+import todoReducer from "./reducers/TodoSlice";
 
-// const store = configureStore({
-//   reducer: todoReducer,
-// });
+const store = configureStore({
+  // reducer: crudReducer,
+  // reducer: againReducer,
 
-// export default store;
+  reducer: todoReducer,
+});
+
+export default store;
