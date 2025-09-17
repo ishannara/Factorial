@@ -5,7 +5,7 @@ import { Bar, Doughnut } from "react-chartjs-2";
 export const Chart1 = () => {
   return (
     <>
-      <Box>
+      <Box display={"flex"} gap={5} p={5}>
         {/* BAR Chart */}
         <Card>
           <CardContent>

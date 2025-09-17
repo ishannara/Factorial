@@ -21,3 +21,10 @@ export const BlogCompValidation = yup.object().shape({
   state: yup.string().required("State is required"),
   country: yup.string().required("Country is required"),
 });
+
+export const fromValidation = yup.object().shape({
+  name: yup.string().required("Name is required"),
+  email: yup.string().email("Invalid email").required("Email is required"),
+  age: yup.string().required("Age is required"),
+  password: yup.string().required("Password is required"),
+});

@@ -21,6 +21,12 @@ import { Filter } from "./Filter";
 import ModalDemo from "./Modal";
 import { Chart1 } from "./Chart";
 import AgainTable from "./AgainTable";
+import { DynamicSearch } from "./freshComponant/DynamicSearch";
+import FormValidationSnackbarAlerts from "./freshComponant/FormValidation&SnackbarAlerts";
+import TodoListwithEditableItems from "./freshComponant/TodoListwithEditableItems";
+import GetApi from "./FreshComp/GetApi";
+import PostApi from "./FreshComp/PostApi";
+import DeleteApi from "./FreshComp/DeleteApi";
 
 function App() {
   return (
@@ -51,6 +57,12 @@ function App() {
           <Route path="/modal" element={<ModalDemo />} />
           <Route path="/chart" element={<Chart1 />} />
           <Route path="/" element={<AgainTable />} />
+          <Route path="/dynamic" element={<DynamicSearch />} />
+          <Route path="/fromValidation" element={<FormValidationSnackbarAlerts />} />
+          <Route path="/todoList" element={<TodoListwithEditableItems />} />
+          <Route path="/getapi" element={<GetApi />} />
+          <Route path="/postapi" element={<PostApi />} />
+          <Route path="/delapi" element={<DeleteApi />} />
         </Routes>
       </BrowserRouter>
     </>
